@@ -44,7 +44,7 @@ a {
     transition: all 0.2s ease;
 }
 
-a: hover {
+a:hover {
     text-decoration: none;
     color: var(--hotmag);
 }
@@ -52,6 +52,45 @@ a: hover {
 #intro {
     padding: 0 2rem 10rem 2rem;
 }
+
+/*Navbar*/
+
+.navlinks {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display:flex;
+    flex-flow:row wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    font-family: var(--mono);
+}
+
+.navlinks li a {
+    text-decoration:none;
+    transition: color 0.4s ease;
+    color: var(--white);
+    font-size: 1.15rem;
+}
+
+.navlinks li a:hover {
+    color: var(--hotmag);
+}
+
+.navlinks li:first-child a {
+    font-family: var(--sans);
+}
+
+.navlinks li:first-child {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+/*Intro section*/
 
 #intro p {
     font-size: 1rem;
@@ -69,5 +108,24 @@ a: hover {
 }
 
 .name span {
-    display:block;
+    display:block;  
 }
+
+#contact {
+    text-align: center;
+    background-color: var(--plum);
+  }
+  
+#contact article {
+    width: 400px;
+    margin: 0 auto;
+    padding: 3rem 0;
+  }
+
+#contact article p:last-child {
+    margin-top: 3rem;
+  }
+  
+#contact article a {
+    color: var(--aqua);
+  }
