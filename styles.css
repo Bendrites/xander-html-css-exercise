@@ -57,6 +57,10 @@ a:hover {
     height: 2px;
 }
 
+.section-dkblue {
+  background-color: var(--dkblue);
+}
+
 /*Navbar*/
 
 nav {
@@ -178,7 +182,90 @@ nav [class*="fa"]:hover {
     color: var(--aqua);
   }
 
-/* Footer */
+/* Projects Section */
+
+#projects {
+  padding: 4rem 1rem;
+}
+
+#projects h2 {
+  font-size: 2.5rem;
+  margin-bottom: calc(2.5rem * 1.5);
+}
+
+#projects h3 {
+  color: var(--aqua);
+  margin-bottom: calc(1.5rem * 1.5);
+}
+
+#projects h4 {
+  font-size: 1rem;
+  font-family: var(--mono);
+  margin: 0;
+}
+
+.black-box {
+  background-color: var(--black);
+  border-radius: 7px;
+  padding: 1rem;
+  color: var(--white);
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+#projects ul {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+  justify-content: flex-start;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+#projects img {
+  margin: 2rem 0 4rem 0;
+  padding: 0.2rem;
+  border-top: 1px solid var(--aqua);
+  border-left: 1px solid var(--aqua); 
+  border-radius: 14px;
+  width: 100%;
+}
+
+@media screen and (min-width: 550px) {
+
+  #projects article {
+    display:grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 1rem;
+  }
+
+  .text {
+    order: 2;
+    text-align: right;
+  }
+
+  #projects ul {
+    justify-content: flex-end;
+  }
+
+  .image {
+    grid-column: 1 / 7;
+  }
+
+  .text {
+    grid-column: 5 / 11;
+  }
+
+  .image, 
+  .text {
+    grid-row: 1 / 2;
+  }
+}
+
+/* Footer Section */
 
 footer {
     padding: 0.5rem 0;
