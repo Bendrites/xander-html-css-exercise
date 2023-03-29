@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Benjamin Hughes</title>
-    <link rel="stylesheet" href="./styles.css"/>
+    <link rel="stylesheet" href="./styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -13,59 +12,100 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <title>Create the Markdown</title>
   </head>
   <body>
     <nav>
-        <ul class="navlinks">
-            <li>
-                <a href="#">
-                    <i class="fas fa-code" aria-hidden="true"></i>
-                    Benjamin Hughes
-                </a>
-            </li>
-            <li>
-                <a href="#">Projects</a>
-            </li>
-            <li>
-                <a href="#">About</a>
-            </li> 
-            <li>
-                <a href="#">Contact</a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
-                    <span class="sr-only">LinkedIn</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="fa-brands fa-square-github" aria-hidden="true"></i>
-                    <span class="sr-only">Github</span>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="call-to-action">Resume</a>
-            </li>
-        </ul>
+      <!-- Wrap each piece of text in an <a> tag and nest that <a> tag in an <li> tag. -->
+      <ul class="navlinks">
+        <li>
+          <a href="#">
+            <i class="fas fa-code" aria-hidden="true"></i>
+            Benjamin Hughes
+          </a>
+        </li>
+        <li>
+          <a href="#">Projects</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+            <span class="sr-only">LinkedIn</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-brands fa-square-github" aria-hidden="true"></i>
+            <span class="sr-only">Github</span>
+          </a>
+        </li>
+        <li>
+          <a class="call-to-action" href="#">Resume</a>
+        </li>
+      </ul>
     </nav>
+
     <section id="intro">
-        <p class="name">Hi, my name is <span>Benjamin Hughes.</span></p>
-        <h2>I develop frontend and backend software.</h2>
-        <p>I'm a developer specializing in HTML, CSS, JavaScript, Python, and SQL.</p>
-        <p>Currently, I'm working for <a href="https://www.xandertalent.com/">Xander Talent</a> as a Software Engineering Consultant.</p>
+      <p class="name">Hi, my name is <span>Benjamin Hughes</span></p>
+      <h2>I develop frontend and backend software.</h2>
+      <p>
+        I'm a developer specializing in HTML, CSS, JavaScript,
+        Python and SQL.
+      </p>
+      <p>
+        Currently, I'm working as a Software Engineering Consultant for
+        <a href="https://www.xandertalent.com" target="_blank">Xander Talent</a>.
+      </p>
     </section>
+    <div class="gradient"></div>
     <section id="contact">
-        <article>
-            <h2>Contact Me</h2>
-            <p>
-                I'm always interested in hearing about new opportunities, 
-                and learning about new technologies to build cool projects.
-            </p>
-            <p>
-                <a href="mailto:random-address@email.com">Email Me</a>
-            </p>
-        </article>
+      <article>
+        <h2>Contact Me</h2>
+        <p>
+          I'm always interested in hearing about new opportunities, and
+          learning about new technologies to build cool projects.
+        </p>
+        <p>
+          <a href="mailto:some-email-address@hello.com">Email Me</a>
+        </p>
+      </article>
     </section>
+    <div class="gradient"></div>
+    <footer>
+      <p>Benjamin Hughes · Developer</p>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">
+              <span class="sr-only">LinkedIn</span>
+              <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="sr-only">Github</span>
+              <i class="fa-brands fa-square-github" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="sr-only">Mail</span>
+              <i class="fas fa-envelope" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <p>
+        <small>
+          © Benjamin Hughes. All Rights Reserved.
+        </small>
+      </p>
+    </footer>
   </body>
 </html>
