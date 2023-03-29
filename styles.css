@@ -265,6 +265,99 @@ nav [class*="fa"]:hover {
   }
 }
 
+/* About Section */
+
+#about {
+  padding: 4rem 1rem;
+}
+
+#about h2 {
+  font-size: 2.5rem;
+  /* Adding the line height onto our bottom margin. */
+  margin-bottom: calc(2.5rem * 1.5);
+}
+
+#about h3 {
+  color: var(--aqua);
+  margin-bottom: calc(1.5rem * 1.5);
+}
+
+#about h4 {
+  font-size: 1rem;
+  font-family: var(--mono);
+  margin: 0;
+}
+
+.white-box {
+  background-color: var(--white);
+  border-radius: 7px;
+  padding: 1rem;
+  color: var(--black);
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+#about ul {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+#about img {
+  margin: 2rem 0 4rem 0;
+  padding: 0.2rem;
+  border-top: 1px solid var(--aqua);
+  border-left: 1px solid var(--aqua);
+  border-radius: 14px;
+  width: 70%;
+}
+
+/* Create the media query */
+@media screen and (min-width: 550px) {
+  /* Turn our article into a CSS grid */
+
+  #about article {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 1rem;
+  }
+
+  .text-reversed {
+    order: 2;
+    text-align: right;
+  }
+
+  #about ul {
+    justify-content: flex-end;
+  }
+
+  .image-reversed {
+    grid-column: 1 / 7;
+  }
+
+  .text-reversed {
+    grid-column: 5 / 11;
+  }
+
+  .image-reversed,
+  .text-reversed {
+    grid-row: 1 / 2;
+  }
+
+  .image-reversed,
+  .text-reversed {
+    flex-direction: row-reverse;
+
+  }
+
+}
+
 /* Footer Section */
 
 footer {
