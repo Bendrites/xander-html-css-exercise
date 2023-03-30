@@ -315,7 +315,7 @@ nav [class*="fa"]:hover {
   border-top: 1px solid var(--aqua);
   border-left: 1px solid var(--aqua);
   border-radius: 14px;
-  width: 70%;
+  width: 100%;
 }
 
 /* Create the media query */
@@ -328,7 +328,7 @@ nav [class*="fa"]:hover {
     gap: 1rem;
   }
 
-  .text-reversed {
+  .reversed .text {
     order: 2;
     text-align: left;
   }
@@ -337,23 +337,18 @@ nav [class*="fa"]:hover {
     justify-content: flex-start;
   }
 
-  .image-reversed {
-    grid-column: 5 / 11;
+  .reversed .image {
+    grid-column: 7 / 11;
   }
 
-  .text-reversed {
+  .reversed .text {
     grid-column: 1 / 7;
   }
 
-  .image-reversed,
-  .text-reversed {
-    grid-row: 10 / 11;
-  }
-
-  .image-reversed,
-  .text-reversed {
+  .reversed .image,
+  .reversed .text {
+    grid-row: 1 / 2;
     flex-direction: row-reverse;
-
   }
 
 }
