@@ -330,24 +330,24 @@ nav [class*="fa"]:hover {
 
   .text-reversed {
     order: 2;
-    text-align: right;
+    text-align: left;
   }
 
   #about ul {
-    justify-content: flex-end;
+    justify-content: flex-start;
   }
 
   .image-reversed {
-    grid-column: 1 / 7;
+    grid-column: 5 / 11;
   }
 
   .text-reversed {
-    grid-column: 5 / 11;
+    grid-column: 1 / 7;
   }
 
   .image-reversed,
   .text-reversed {
-    grid-row: 1 / 2;
+    grid-row: 10 / 11;
   }
 
   .image-reversed,
